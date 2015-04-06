@@ -1,0 +1,16 @@
+<div id="promotions">
+  <h2>Welcome to Tatipamula promotions</h2><br/>
+    <button type="button" class="btn btn-primary" ng-click="createPaseSchedule()">Create a PASE Schedule</button>&nbsp;&nbsp;
+    <button type="button" class="btn btn-success" ng-click="showPaseSchedule()">View PASE Schedule</button><br/>
+    <div style="width: 50%;">
+        <h3>Go-Getter</h3>
+       <div class="promoHeader">
+           <div style="width: 50%;float: left;text-align: center;border: solid 1px #AAAA00;">Promo</div>
+           <div style="width: 50%;float: left;text-align: center;border: solid 1px #AAAA00;">Points</div>
+       </div>
+      <div class="promoContent" ng-repeat="promo in promotions">
+            <div style="width: 50%;float: left;border: solid 1px #AAAA00;padding-left:10px;">{{promo.promoName}}</div>
+            <div style="width: 50%;float: left;border: solid 1px #AAAA00;text-align: center">{{promo.points}}</div>
+      </div>
+    </div>
+</div>
