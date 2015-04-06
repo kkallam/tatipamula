@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/myStyles.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+    <!--<script src="angular-local-storage.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>-->
+    <script src="app.js" type="text/javascript"></script>
+</head>
+<body ng-controller="mainController">
+    <div id="containerDiv">
+        <header>
+            <div id="logoDiv">
+                <a href="#home"><img src="images/9.1.t.png" /></a>
+                <div class="welcomeMsg">Welcome toTatipamula Enterprises Site</div>
+            </div>
+           <nav id="navDiv">
+               <ul>
+                   <li>
+                        <a href="#home">Home</a>
+                   </li>
+                   <li>
+                       <a href="#aboutus">About Us</a>
+                   </li>
+                   <li>
+                       <a href="#promotions">Promotions</a>
+                           <ul>
+                               <li><a href="">Go-Getter Promo</a> </li>
+                               <li><a href="">Other Promos</a> </li>
+                           </ul>
+                   </li>
+                   <li>
+                       <a href="#contactus">Contact Us</a>
+                   </li>
+                   <li>
+                       <a href="#events">Events</a>
+                            <ul>
+                                <li><a href="">Open Meeting</a></li>
+                                <li><a href="">PASE Meeting</a></li>
+                                <li><a href="">Phone Team</a></li>
+                            </ul>
+                   </li>
+                   <li>
+                       <a href="#album">Album</a>
+                   </li>
+               </ul>
+           </nav>
+        </header>
+        <div id="contentDiv">
+            <div  ng-view></div>
+        </div>
+
+        <footer class="text-center">
+            <h3>Welcome to <a href="#">KVK Enterprises</a></h3>
+        </footer>
+    </div>
+
+
+</body>
+</html>
