@@ -1,0 +1,167 @@
+
+/*
+@import url('http://fonts.googleapis.com/css?family=Kavoon');
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+@font-face {
+    font-family: 'kvkFont'; *//*a name to be used later*//*
+    src: url('http://domain.com/fonts/font.ttf'); *//*URL to font*//*
+}*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+body{
+    font-family: serif;
+    background-color: #707070;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    position: relative;
+}
+body, div,p{
+    display: block;
+}
+h1{
+    font-size: 26px;
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+#containerDiv{
+    width: 1120px;
+    margin: 0 auto;
+/*    overflow: auto;*/
+    height: auto;
+
+}
+header{
+    display: block;
+    clear: both;
+    font-family: 'Indie Flower';
+    font-size: 28px;
+    background-color: #656565;
+    width: 100%;
+}
+#logoDiv{
+    overflow: auto;
+}
+#logoDiv img{
+    float: left;
+    width: 130px;
+    height: 100px;
+    margin-left: 20px;
+}
+.welcomeMsg{
+    float: left;
+    line-height: 90px;
+    margin-left: 10%;
+    font-weight: bold;
+    font-size: 36px;
+    color: seashell;
+}
+
+  /* ***************  Navigation Menu  ****************  */
+
+#navDiv ul {
+    background: white;
+    float: left;
+    -webkit-transition: .5s;
+    transition: .5s;
+    font-size: 18px;
+    background-color: darkcyan;
+    width: 100%;
+    padding: 0;
+}
+#navDiv li {
+    float: left;
+    position: relative;
+    width: auto;
+    list-style: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-right: 1px solid #eee;
+}
+#navDiv > ul > li > a {
+    text-transform: uppercase;
+}
+#navDiv a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    font-family: 'Roboto Slab';
+    text-decoration: none;
+}
+#navDiv li:last-child, #navDiv li a:last-child {
+    border-right: none !important;
+}
+#navDiv a:visited {
+    background-color: #AA6600;
+    text-decoration: none;
+    color: #ffffff;
+}
+#navDiv a:hover {
+    background-color: #BB6622;
+    text-decoration: none;
+    color: #ffffff;
+}
+#navDiv a:active {
+    background-color: #AA6600;
+    text-decoration: none;
+    color: #ffffff;
+}
+#navDiv ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    width: 205px !important;
+}
+#navDiv li:hover > ul {
+    display: block;
+}
+#navDiv ul ul li{
+    border: none !important;
+    width: 100% !important;
+}
+/* *************** END Navigation Menu  ****************  */
+
+#contentDiv{
+    width: 100%;
+    background-color: #f1f1f1;
+    min-height: 200px;
+    height: 420px;
+    overflow: auto;
+}
+#promotions, #aboutus, #album, #contactus, #events, #home{
+    padding: 20px 10px;
+    overflow: auto;
+    width: 100%;
+}
+.promoHeader, .promoContent{
+    width: 100%;
+    border: 1px solid #AAAA00;
+    line-height: 27px;
+    clear: both;
+}
+input[type="text"] {
+    width: 300px;
+    border-radius: 6px;
+    line-height: 26px;
+}
+#createPaseSchedule table tr td{
+    margin: 10px 0;
+}
+#viewPaseSchedule table tr td{
+    border: 1px solid #eee;
+    height: 30px;
+    background-color: #002222;
+    padding: 0 10px;
+}
